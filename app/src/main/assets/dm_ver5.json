@@ -1,0 +1,181 @@
+{
+  "device": "DM20",
+  "version": "Ver5",
+  "digimon": [
+    {
+      "id": "zurumon",
+      "name": "Zurumon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "pagumon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "pagumon",
+      "name": "Pagumon",
+      "stage": "Baby II",
+      "evolvesFrom": ["zurumon"],
+      "evolvesTo": [
+        { "to": "gazimon", "requirements": ["0-2 Care Mistakes"] },
+        { "to": "gizamon", "requirements": ["3+ Care Mistakes"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "gazimon",
+      "name": "Gazimon",
+      "stage": "Rookie",
+      "evolvesFrom": ["pagumon"],
+      "evolvesTo": [
+        { "to": "darktyrannomon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "cyclonemon", "requirements": ["Care mistakes: 3+", "Training: 5–15", "Overfeed: 3+"] },
+        { "to": "devidramon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "tuskmon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "raremon", "requirements": ["Care mistakes: 3+", "Training: 0–4"] },
+        { "to": "raremon", "requirements": ["Care mistakes: 3+", "Training: 5+", "Overfeed: 0–2"] }
+      ]
+    },
+    {
+      "id": "gizamon",
+      "name": "Gizamon",
+      "stage": "Rookie",
+      "evolvesFrom": ["pagumon"],
+      "evolvesTo": [
+        { "to": "devidramon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "tuskmon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 0–2"] },
+        { "to": "flymon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "deltamon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "raremon", "requirements": ["Care mistakes: 3+", "Training: 0–7"] },
+        { "to": "raremon", "requirements": ["Care mistakes: 3+", "Training: 8-15","Overfeed: 3+"] },
+        { "to": "raremon", "requirements": ["Care mistakes: 3+", "Training: 16+","Overfeed: 0-2"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "darktyrannomon",
+      "name": "DarkTyrannomon",
+      "stage": "Champion",
+      "evolvesFrom": ["gazimon"],
+      "evolvesTo": [
+        { "to": "metaltyrannomon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "cyclonemon",
+      "name": "Cyclonemon",
+      "stage": "Champion",
+      "evolvesFrom": ["gazimon"],
+      "evolvesTo": [
+        { "to": "datamon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "devidramon",
+      "name": "Devidramon",
+      "stage": "Champion",
+      "evolvesFrom": ["gazimon", "gizamon"],
+      "evolvesTo": [
+        { "to": "metaltyrannomon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "tuskmon",
+      "name": "Tuskmon",
+      "stage": "Champion",
+      "evolvesFrom": ["gazimon", "gizamon"],
+      "evolvesTo": [
+        { "to": "datamon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "raremon",
+      "name": "Raremon",
+      "stage": "Champion",
+      "evolvesFrom": ["gazimon", "gizamon"],
+      "evolvesTo": [
+        { "to": "extyranomon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "flymon",
+      "name": "Flymon",
+      "stage": "Champion",
+      "evolvesFrom": ["gizamon"],
+      "evolvesTo": [
+        { "to": "metaltyrannomon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "deltamon",
+      "name": "Deltamon",
+      "stage": "Champion",
+      "evolvesFrom": ["gizamon"],
+      "evolvesTo": [
+        { "to": "datamon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "metaltyrannomon",
+      "name": "MetalTyrannomon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["darktyrannomon", "devidramon", "flymon"],
+      "evolvesTo": [
+        { "to": "machinedramon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+    {
+      "id": "extyranomon",
+      "name": "ExTyranomon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["raremon"],
+      "evolvesTo": [
+        {
+          "to": "puppetmon", "requirements": ["Care mistakes: 0–2"]
+        }
+      ]
+    },
+    {
+      "id": "datamon",
+      "name": "Datamon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["cyclonemon", ",tuskmon", "deltamon"],
+      "evolvesTo": []
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "puppetmon",
+      "name": "Puppetmon",
+      "stage": "Mega",
+      "evolvesFrom": ["extyranomon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "machinedramon",
+      "name": "Machinedramon",
+      "stage": "Mega",
+      "evolvesFrom": ["metaltyrannomon"],
+      "evolvesTo": [
+        {
+          "to": "rusttyrannomon", "requirements": ["Tag Battle 5 times with Aegisdramon"]
+        }
+      ]
+    },
+    {
+      "id": "rusttyrannomon",
+      "name": "RustTyrannomon",
+      "stage": "Ultra",
+      "evolvesFrom": ["Machinedramon"],
+      "evolvesTo": []
+    }
+  ]
+}

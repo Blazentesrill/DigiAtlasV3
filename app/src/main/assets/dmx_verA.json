@@ -1,0 +1,225 @@
+{
+  "device": "DMX",
+  "version": "VerA",
+  "digimon": [
+    {
+      "id": "puttimon",
+      "name": "Puttimon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "tokomonx", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "tokomonx",
+      "name": "Tokomon X",
+      "stage": "Baby II",
+      "evolvesFrom": ["puttimon"],
+      "evolvesTo": [
+        { "to": "renamonx", "requirements": ["Area Cleared: 2", "Care Mistakes: 0-1", "Effort: 4"] },
+        { "to": "agumonx", "requirements": ["Area NOT Cleared: 2", "Care Mistakes: 0-1", "Effort: 4"] },
+        { "to": "agumonx", "requirements": ["Care Mistakes: 0-1", "Effort: 0-3"] },
+        { "to": "herissmon", "requirements": ["Care Mistakes: 2+"] }
+      ]
+    },
+
+    {
+      "id": "renamonx",
+      "name": "Renamon X",
+      "stage": "Rookie",
+      "evolvesFrom": ["tokomonx"],
+      "evolvesTo": [
+        { "to": "leomonx", "requirements": ["Area Cleared: 5", "Care Mistakes: 0-2", "Effort: 4"] },
+        { "to": "sangloupmon", "requirements": ["Area NOT Cleared: 5", "Care Mistakes: 0-2", "Effort: 4"] },
+        { "to": "sangloupmon", "requirements": ["Care Mistakes: 0-2", "Effort: 0-3"] },
+        { "to": "damemon", "requirements": ["Care Mistakes: 3+"] }
+      ]
+    },
+    {
+      "id": "agumonx",
+      "name": "Agumon X",
+      "stage": "Rookie",
+      "evolvesFrom": ["tokomonx"],
+      "evolvesTo": [
+        { "to": "tyrannomonx", "requirements": ["Area Cleared: 8", "Care Mistakes: 0-2", "Effort: 2-4"] },
+        { "to": "tobucatmon", "requirements": ["Area NOT Cleared: 8", "Care Mistakes: 0-2", "Effort: 2-4"] },
+        { "to": "tobucatmon", "requirements": ["Care Mistakes: 0-2", "Effort: 0-1"] },
+        { "to": "damemon", "requirements": ["Care Mistakes: 3+"] }
+      ]
+    },
+    {
+      "id": "herissmon",
+      "name": "Herissmon",
+      "stage": "Rookie",
+      "evolvesFrom": ["tokomonx"],
+      "evolvesTo": [
+        { "to": "tyrannomonx", "requirements": ["Area Cleared: 8", "Care Mistakes: 0-2", "Effort: 4"] },
+        { "to": "sangloupmon", "requirements": ["Area NOT Cleared: 8", "Care Mistakes: 0-2", "Effort: 4"] },
+        { "to": "sangloupmon", "requirements": ["Care Mistakes: 0-2", "Effort: 0-3"] },
+        { "to": "damemon", "requirements": ["Care Mistakes: 3+"] }
+      ]
+    },
+
+    {
+      "id": "leomonx",
+      "name": "Leomon X",
+      "stage": "Champion",
+      "evolvesFrom": ["renamonx"],
+      "evolvesTo": [
+        { "to": "cerberumonx", "requirements": ["Area Cleared: 12", "Care Mistakes: 0-2", "Level: 5-6"] },
+        { "to": "metalgreymonx", "requirements": ["Area Cleared: 12", "Care Mistakes: 0-2", "Level: 1-4"] },
+        { "to": "metalgreymonx", "requirements": ["Area Cleared: 11", "Area NOT Cleared: 12", "Care Mistakes: 0-2", "Level: 5-6"] },
+        { "to": "metaltyrannomonx", "requirements": ["Area Cleared: 14", "Care Mistakes: 3+", "Level: 6"] },
+        { "to": "crowmon", "requirements": ["Care Mistakes: 3+", "Level: 1-5"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 14", "Care Mistakes: 3+", "Level: 6"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 11"] }
+      ]
+    },
+    {
+      "id": "tyrannomonx",
+      "name": "Tyrannomon X",
+      "stage": "Champion",
+      "evolvesFrom": ["agumonx", "herissmon"],
+      "evolvesTo": [
+        { "to": "metalgreymonx", "requirements": ["Area Cleared: 11", "Care Mistakes: 0-2", "Level: 5-6"] },
+        { "to": "metaltyrannomonx", "requirements": ["Area Cleared: 14", "Care Mistakes: 0-2", "Level: 1-4"] },
+        { "to": "metaltyrannomonx", "requirements": ["Area Cleared: 14", "Care Mistakes: 3+", "Level: 6"] },
+        { "to": "crowmon", "requirements": ["Care Mistakes: 3+", "Level: 1-5"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 14", "Care Mistakes: 0-1", "Level: 1-4"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 14", "Care Mistakes: 3+", "Level: 6"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 11"] }
+      ]
+    },
+    {
+      "id": "sangloupmon",
+      "name": "Sangloupmon",
+      "stage": "Champion",
+      "evolvesFrom": ["renamonx", "herissmon"],
+      "evolvesTo": [
+        { "to": "lucemonchaosmode", "requirements": ["Care Mistakes: 0-1", "Level: 1-4"] },
+        { "to": "lucemonchaosmode", "requirements": ["Area NOT Cleared: 12", "Care Mistakes: 0-1", "Level: 5-6"] },
+        { "to": "cerberumonx", "requirements": ["Area Cleared: 12", "Care Mistakes: 0-1", "Level: 5-6"] },
+        { "to": "cerberumonx", "requirements": ["Care Mistakes: 2+", "Level: 6", "Defeat Mega Digimon (Quest Mode): 1+"] },
+        { "to": "skullbaluchimon", "requirements": ["Care Mistakes: 2+"] }
+      ]
+    },
+    {
+      "id": "tobucatmon",
+      "name": "Tobucatmon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumonx"],
+      "evolvesTo": [
+        { "to": "skullbaluchimon", "requirements": ["Care Mistakes: 0", "Level: 5-6"] },
+        { "to": "metalgreymonx", "requirements": ["Area Cleared: 11", "Care Mistakes: 0", "Level: 1-4"] },
+        { "to": "metalgreymonx", "requirements": ["Care Mistakes: 1+", "Level: 6", "Defeat Mega Digimon (Quest Mode): 1+"] },
+        { "to": "crowmon", "requirements": ["Care Mistakes: 1+", "Level: 1-5"] },
+        { "to": "crowmon", "requirements": ["Care Mistakes: 1+", "Level: 6","Level: 6", "Defeat Mega Digimon (Quest Mode): 0"] },
+        { "to": "crowmon", "requirements": ["Area NOT Cleared: 11", "Care Mistakes: 0", "Level: 1-4"] }
+      ]
+    },
+    {
+      "id": "damemon",
+      "name": "Damemon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumonx", "renamonx", "herissmon"],
+      "evolvesTo": [
+        { "to": "cerberumonx", "requirements": ["Area Cleared: 12", "Care Mistakes: 0", "Level: 6"] },
+        { "to": "cerberumonx", "requirements": ["Care Mistakes: 1+", "Level: 6", "Defeat Mega Digimon (Quest Mode): 1+"] },
+        { "to": "lucemonchaosmode", "requirements": ["Care Mistakes: 0", "Level: 1-5"] },
+        { "to": "lucemonchaosmode", "requirements": ["Area NOT Cleared: 12", "Care Mistakes: 0", "Level: 6"] },
+        { "to": "skullbaluchimon", "requirements": ["Care Mistakes: 1+", "Level: 6", "Defeat Mega Digimon (Quest Mode): 0"] },
+        { "to": "skullbaluchimon", "requirements": ["Care Mistakes: 1+", "Level: 1-5"] }
+      ]
+    },
+
+    {
+      "id": "cerberumonx",
+      "name": "Cerberumon X",
+      "stage": "Ultimate",
+      "evolvesFrom": ["leomonx", "sangloupmon", "damemon"],
+      "evolvesTo": [
+        { "to": "sakuyamonx", "requirements": ["Area Cleared: 21", "Care Mistakes: 0-1", "Level: 6-7"] },
+        { "to": "sleipmonx", "requirements": ["Area Cleared: 20", "Care Mistakes: 0-1", "Level: 8"] },
+        { "to": "malomyotismon", "requirements": ["Care Mistakes: 0-1", "Level: 1-5"] },
+        { "to": "malomyotismon", "requirements": ["Area Cleared: 19", "Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 0-4"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 21", "Care Mistakes: 0-1", "Level: 6-7"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 20", "Care Mistakes: 0-1", "Level: 8"] },
+        { "to": "jesmonx", "requirements": ["Area Cleared: 19", "Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 5+"] },
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 1-7"] },
+        { "to": "platinumnumemon", "requirements": ["Area NOT Cleared: 19", "Care Mistakes: 2-3", "Level: 8"] }
+      ]
+    },
+    {
+      "id": "metalgreymonx",
+      "name": "MetalGreymon X",
+      "stage": "Ultimate",
+      "evolvesFrom": ["tyrannomonx", "leomonx", "tobucatmon"],
+      "evolvesTo": [
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17", "Care Mistakes: 0-2", "Level: 5-6"] },
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17", "Care Mistakes: 3+", "Level: 8","Defeat Mega Digimon (Quest Mode): 3+"] },
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17","Area NOT Cleared: 19", "Care Mistakes: 0-2", "Level: 7-8"] },
+
+        { "to": "jesmonx", "requirements": ["Area Cleared: 19", "Care Mistakes: 0-2", "Level: 7-8"] },
+
+        { "to": "valdurmon", "requirements": ["Care Mistakes: 0-2","Level: 1-4"] },
+        { "to": "valdurmon", "requirements": ["Area Cleared: 17", "Care Mistakes: 3+", "Level: 8", "Defeat Ultra Digimon (Quest Mode): 0-2"] },
+        { "to": "valdurmon", "requirements": ["Area NOT Cleared: 17", "Care Mistakes: 0-2", "Level: 5-8"] },
+
+
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 3+", "Level: 5-7"] },
+        { "to": "platinumnumemon", "requirements": ["Area NOT Cleared: 17","Care Mistakes: 3+", "Level: 8"] }
+      ]
+    },
+    {
+      "id": "lucemonchaosmode",
+      "name": "Lucemon: Chaos Mode",
+      "stage": "Ultimate",
+      "evolvesFrom": ["sangloupmon", "damemon"],
+      "evolvesTo": [
+        { "to": "beelzemonx", "requirements": ["Area Cleared: 23", "Care Mistakes: 0-1", "Level: 8"] },
+
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17", "Care Mistakes: 0-1", "Level: 6-7"] },
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17","Area NOT Cleared: 23", "Care Mistakes: 0-1", "Level: 8"] },
+
+        { "to": "malomyotismon", "requirements": ["Care Mistakes: 0-1", "Level: 1-5"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 23", "Care Mistakes: 0-1", "Level: 6-7"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 17", "Care Mistakes: 0-1", "Level: 8"] },
+
+        { "to": "rafflesimon", "requirements": ["Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 5+"] },
+
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 1-7"] },
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 0-4"] }
+      ]
+    },
+    {
+      "id": "skullbaluchimon",
+      "name": "SkullBaluchimon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["tobucatmon", "sangloupmon", "damemon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "metaltyrannomonx",
+      "name": "MetalTyrannomon X",
+      "stage": "Ultimate",
+      "evolvesFrom": ["leomonx", "tyrannomonx"],
+      "evolvesTo": []
+    },
+    {
+      "id": "crowmon",
+      "name": "Crowmon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["leomonx", "tyrannomonx", "tobucatmon"],
+      "evolvesTo": []
+    },
+
+    {
+      "id": "durandamon",
+      "name": "Durandamon",
+      "stage": "Mega",
+      "evolvesFrom": ["duramon"],
+      "evolvesTo": []
+    }
+  ]
+}

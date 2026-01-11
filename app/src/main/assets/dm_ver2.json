@@ -1,0 +1,180 @@
+{
+  "device": "DM20",
+  "version": "Ver2",
+  "digimon": [
+    {
+      "id": "punimon",
+      "name": "Punimon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "tsunomon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "tsunomon",
+      "name": "Tsunomon",
+      "stage": "Baby II",
+      "evolvesFrom": ["punimon"],
+      "evolvesTo": [
+        { "to": "gabumon", "requirements": ["0-2 Care Mistakes"] },
+        { "to": "elecmon", "requirements": ["3+ Care Mistakes"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "gabumon",
+      "name": "Gabumon",
+      "stage": "Rookie",
+      "evolvesFrom": ["punimon"],
+      "evolvesTo": [
+        { "to": "kabuterimon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "garurumon", "requirements": ["Care mistakes: 3+", "Training: 5–15", "Overfeed: 3+"] },
+        { "to": "angemon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "frigimon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "vegimon", "requirements": ["Care mistakes: 3+", "Training: 0–4"] },
+        { "to": "vegimon", "requirements": ["Care mistakes: 3+", "Training: 5+", "Overfeed: 0–2"] }
+      ]
+    },
+    {
+      "id": "elecmon",
+      "name": "Elecmon",
+      "stage": "Rookie",
+      "evolvesFrom": ["punimon"],
+      "evolvesTo": [
+        { "to": "angemon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "frigimon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 0–2"] },
+        { "to": "birdramon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "whamon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "vegimon", "requirements": ["Care mistakes: 3+", "Training: 0–7"] },
+        { "to": "vegimon", "requirements": ["Care mistakes: 3+", "Training: 8-15", "Overfeed: 3+"] },
+        { "to": "vegimon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 0-2"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "kabuterimon",
+      "name": "Kabuterimon",
+      "stage": "Champion",
+      "evolvesFrom": ["gabumon"],
+      "evolvesTo": [
+        { "to": "skullgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "garurumon",
+      "name": "Garurumon",
+      "stage": "Champion",
+      "evolvesFrom": ["gabumon"],
+      "evolvesTo": [
+        { "to": "metalmamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "angemon",
+      "name": "Angemon",
+      "stage": "Champion",
+      "evolvesFrom": ["gabumon", "elecmon"],
+      "evolvesTo": [
+        { "to": "skullgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "frigimon",
+      "name": "Frigimon",
+      "stage": "Champion",
+      "evolvesFrom": ["gabumon", "elecmon"],
+      "evolvesTo": [
+        { "to": "metalmamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "vegimon",
+      "name": "Vegimon",
+      "stage": "Champion",
+      "evolvesFrom": ["gabumon", "elecmon"],
+      "evolvesTo": [
+        { "to": "vademon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "birdramon",
+      "name": "Birdramon",
+      "stage": "Champion",
+      "evolvesFrom": ["elecmon"],
+      "evolvesTo": [
+        { "to": "skullgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "whamon",
+      "name": "Whamon",
+      "stage": "Champion",
+      "evolvesFrom": ["elecmon"],
+      "evolvesTo": [
+        { "to": "metalmamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "skullgreymon",
+      "name": "SkullGreymon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["kabuterimon", "angemon", "birdramon"],
+      "evolvesTo": [
+        { "to": "skullmammon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+    {
+      "id": "vademon",
+      "name": "Vademon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["vegimon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "metalmamemon",
+      "name": "Metalmamemon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["garurumon", "frigimon", "whamon"],
+      "evolvesTo": [
+        { "to": "cresgarurumon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "skullmammon",
+      "name": "SkullMammon",
+      "stage": "Mega",
+      "evolvesFrom": ["skullgreymon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "cresgarurumon",
+      "name": "CresGarurumon",
+      "stage": "Mega",
+      "evolvesFrom": ["metalmamemon"],
+      "evolvesTo": [
+        {
+          "to": "omegamon_alter_s",
+          "requirements": ["Tag Battle: 5 times with BlitzGreymon"]
+        }
+      ]
+    },
+    {
+      "id": "omegamon_alter_s",
+      "name": "Omegamon Alter-S",
+      "stage": "Ultra",
+      "evolvesFrom": ["cresgarurumon"],
+      "evolvesTo": []
+    }
+  ]
+}

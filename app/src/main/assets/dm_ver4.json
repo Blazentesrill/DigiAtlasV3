@@ -1,0 +1,181 @@
+{
+  "device": "DM20",
+  "version": "Ver4",
+  "digimon": [
+    {
+      "id": "yuramon",
+      "name": "Yuramon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "tanemon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "tanemon",
+      "name": "Tanemon",
+      "stage": "Baby II",
+      "evolvesFrom": ["yuramon"],
+      "evolvesTo": [
+        { "to": "biyomon", "requirements": ["0-2 Care Mistakes"] },
+        { "to": "palmon", "requirements": ["3+ Care Mistakes"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "biyomon",
+      "name": "Biyomon",
+      "stage": "Rookie",
+      "evolvesFrom": ["tanemon"],
+      "evolvesTo": [
+        { "to": "monochromon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "kokatorimon", "requirements": ["Care mistakes: 3+", "Training: 5–15", "Overfeed: 3+"] },
+        { "to": "leomon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "kuwagamon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "nanimon", "requirements": ["Care mistakes: 3+", "Training: 0–4"] },
+        { "to": "nanimon", "requirements": ["Care mistakes: 3+", "Training: 5+", "Overfeed: 0–2"] }
+      ]
+    },
+    {
+      "id": "palmon",
+      "name": "Palmon",
+      "stage": "Rookie",
+      "evolvesFrom": ["tanemon"],
+      "evolvesTo": [
+        { "to": "leomon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "kuwagamon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 0–2"] },
+        { "to": "coelamon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "mojyamon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "nanimon", "requirements": ["Care mistakes: 3+", "Training: 0–7"] },
+        { "to": "nanimon", "requirements": ["Care mistakes: 3+", "Training: 8-15","Overfeed: 3+"] },
+        { "to": "nanimon", "requirements": ["Care mistakes: 3+", "Training: 16+","Overfeed: 0-2"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "monochromon",
+      "name": "Monochromon",
+      "stage": "Champion",
+      "evolvesFrom": ["biyomon"],
+      "evolvesTo": [
+        { "to": "megadramon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "kokatorimon",
+      "name": "Kokatorimon",
+      "stage": "Champion",
+      "evolvesFrom": ["biyomon"],
+      "evolvesTo": [
+        { "to": "piximon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "leomon",
+      "name": "Leomon",
+      "stage": "Champion",
+      "evolvesFrom": ["biyomon", "palmon"],
+      "evolvesTo": [
+        { "to": "megadramon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "kuwagamon",
+      "name": "Kuwagamon",
+      "stage": "Champion",
+      "evolvesFrom": ["biyomon", "palmon"],
+      "evolvesTo": [
+        { "to": "piximon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "nanimon",
+      "name": "Nanimon",
+      "stage": "Champion",
+      "evolvesFrom": ["biyomon", "palmon"],
+      "evolvesTo": [
+        { "to": "digitamamon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "coelamon",
+      "name": "Coelamon",
+      "stage": "Champion",
+      "evolvesFrom": ["palmon"],
+      "evolvesTo": [
+        { "to": "megadramon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "mojyamon",
+      "name": "Mojyamon",
+      "stage": "Champion",
+      "evolvesFrom": ["palmon"],
+      "evolvesTo": [
+        { "to": "piximon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "megadramon",
+      "name": "Megadramon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["monochromon", "leomon", "coelamon"],
+      "evolvesTo": [
+        { "to": "aegisdramon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+    {
+      "id": "digitamamon",
+      "name": "Digitamamon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["nanimon"],
+      "evolvesTo": [
+        {
+          "to": "titamon", "requirements": ["Care mistakes: 0–2"]
+        }
+      ]
+    },
+    {
+      "id": "piximon",
+      "name": "Piximon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["kokatorimon", "kuwagamon", "mojyamon"],
+      "evolvesTo": []
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "titamon",
+      "name": "Titamon",
+      "stage": "Mega",
+      "evolvesFrom": ["digitamamon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "aegisdramon",
+      "name": "Aegisdramon",
+      "stage": "Mega",
+      "evolvesFrom": ["megadramon"],
+      "evolvesTo": [
+        {
+          "to": "rusttyrannomon", "requirements": ["Tag Battle 5 times with Machinedramon"]
+        }
+      ]
+    },
+    {
+      "id": "rusttyrannomon",
+      "name": "RustTyrannomon",
+      "stage": "Ultra",
+      "evolvesFrom": ["aegisdramon"],
+      "evolvesTo": []
+    }
+  ]
+}

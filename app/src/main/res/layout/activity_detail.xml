@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/backToListButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <!-- Stage -->
+            <TextView
+                android:id="@+id/stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:paddingBottom="8dp"/>
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/digimonImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="Digimon image"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+
+            <!-- Evolves From -->
+            <TextView
+                android:id="@+id/evolvesFromLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evolves from:"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/evolvesFromContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:visibility="gone"/>
+
+            <!-- Divider -->
+            <View
+                android:id="@+id/evolutionDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#CCCCCC"
+                android:visibility="gone"/>
+
+            <!-- Evolves To -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evolves to:"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/evolvesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backToListButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Digimon List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -1,0 +1,69 @@
+{
+  "device": "DM20",
+  "version": "Hack",
+  "digimon": [
+    {
+      "id": "sakumon",
+      "name": "Sakumon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "sakuttomon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "sakuttomon",
+      "name": "Sakuttomon",
+      "stage": "Baby II",
+      "evolvesFrom": ["sakumon"],
+      "evolvesTo": [
+        { "to": "hackmon", "requirements": ["Time: 6 Hours"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "hackmon",
+      "name": "Hackmon",
+      "stage": "Rookie",
+      "evolvesFrom": ["sakuttomon"],
+      "evolvesTo": [
+        { "to": "baohackmon", "requirements": ["Time: 24 Hours"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "baohackmon",
+      "name": "BaoHackmon",
+      "stage": "Champion",
+      "evolvesFrom": ["hackmon"],
+      "evolvesTo": [
+        { "to": "saviorhackmon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "saviorhackmon",
+      "name": "SaviorHackmon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["baohackmon"],
+      "evolvesTo": [
+        { "to": "jesmon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "jesmon",
+      "name": "Jesmon",
+      "stage": "Mega",
+      "evolvesFrom": ["saviorhackmon"],
+      "evolvesTo": []
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Digital Monster Ver.1 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_ver1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Monster Ver.1"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_ver1"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+
+    <!-- Digital Monster Ver.2 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_ver2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Monster Ver.2"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_ver2"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+
+    <!-- Digital Monster Ver.3 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_ver3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Monster Ver.3"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_ver3"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <!-- Digital Monster Ver.3 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_ver4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Monster Ver.4"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_ver4"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_ver5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Monster Ver.5"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_ver5"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_zuba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zuba"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_zuba"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_hack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hack"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_hack"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_slayerdra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slayerdra"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_slayerdra"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dm_breakdra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breakdra"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:textAllCaps="true"
+        app:icon="@drawable/egg_dm_breakdra"
+        app:iconGravity="textStart"
+        app:iconPadding="12dp"
+        app:iconSize="32dp"
+        app:iconTint="@null" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- ✅ BACK BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back_to_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="← Back to Device Select"
+        android:layout_marginTop="24dp"
+        app:iconGravity="textStart"
+        app:cornerRadius="12dp"/>
+</LinearLayout>

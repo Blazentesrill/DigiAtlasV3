@@ -1,0 +1,180 @@
+{
+  "device": "DM20",
+  "version": "Ver3",
+  "digimon": [
+    {
+      "id": "poyomon",
+      "name": "Poyomon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "tokomon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "tokomon",
+      "name": "Tokomon",
+      "stage": "Baby II",
+      "evolvesFrom": ["poyomon"],
+      "evolvesTo": [
+        { "to": "patamon", "requirements": ["0-2 Care Mistakes"] },
+        { "to": "kunemon", "requirements": ["3+ Care Mistakes"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "patamon",
+      "name": "Patamon",
+      "stage": "Rookie",
+      "evolvesFrom": ["punimon"],
+      "evolvesTo": [
+        { "to": "unimon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "centarumon", "requirements": ["Care mistakes: 3+", "Training: 5–15", "Overfeed: 3+"] },
+        { "to": "ogremon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "bakemon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "Sukamon", "requirements": ["Care mistakes: 3+", "Training: 0–4"] },
+        { "to": "Sukamon", "requirements": ["Care mistakes: 3+", "Training: 5+", "Overfeed: 0–2"] }
+      ]
+    },
+    {
+      "id": "kunemon",
+      "name": "Kunemon",
+      "stage": "Rookie",
+      "evolvesFrom": ["punimon"],
+      "evolvesTo": [
+        { "to": "ogremon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "bakemon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 0-2"] },
+        { "to": "shellmon", "requirements": ["Care mistakes: 0-2", "Training: 0–15"] },
+        { "to": "drimogemon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "sukamon", "requirements": ["Care mistakes: 3+", "Training: 0–7"] },
+        { "to": "sukamon", "requirements": ["Care mistakes: 3+", "Training: 8-15","Overfeed: 3+"] },
+        { "to": "sukamon", "requirements": ["Care mistakes: 3+", "Training: 16+","Overfeed: 0-2"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "unimon",
+      "name": "Unimon",
+      "stage": "Champion",
+      "evolvesFrom": ["patamon"],
+      "evolvesTo": [
+        { "to": "andromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "centarumon",
+      "name": "Centarumon",
+      "stage": "Champion",
+      "evolvesFrom": ["patamon"],
+      "evolvesTo": [
+        { "to": "giromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "ogremon",
+      "name": "Ogremon",
+      "stage": "Champion",
+      "evolvesFrom": ["patamon", "kunemon"],
+      "evolvesTo": [
+        { "to": "andromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "bakemon",
+      "name": "Bakemon",
+      "stage": "Champion",
+      "evolvesFrom": ["patamon", "kunemon"],
+      "evolvesTo": [
+        { "to": "giromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "sukamon",
+      "name": "Sukamon",
+      "stage": "Champion",
+      "evolvesFrom": ["patamon", "kunemon"],
+      "evolvesTo": [
+        { "to": "etemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "shellmon",
+      "name": "Shellmon",
+      "stage": "Champion",
+      "evolvesFrom": ["kunemon"],
+      "evolvesTo": [
+        { "to": "andromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "whamon",
+      "name": "Whamon",
+      "stage": "Champion",
+      "evolvesFrom": ["kunemon"],
+      "evolvesTo": [
+        { "to": "giromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "drimogemon",
+      "name": "Drimogemon",
+      "stage": "Champion",
+      "evolvesFrom": ["kunemon"],
+      "evolvesTo": [
+        { "to": "giromon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "andromon",
+      "name": "Andromon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["unimon", "ogremon", "shellmon"],
+      "evolvesTo": [
+        { "to": "hiandromon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+    {
+      "id": "etemon",
+      "name": "Etemon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["sukamon"],
+      "evolvesTo": [
+        {
+          "to": "kingetemon", "requirements": ["Care mistakes: 0–2"]
+        }
+      ]
+    },
+    {
+      "id": "giromon",
+      "name": "Giromon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["centarumon", "bakemon", "drimogemon"],
+      "evolvesTo": []
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "kingetemon",
+      "name": "KingEtemon",
+      "stage": "Mega",
+      "evolvesFrom": ["etemon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "hiandromon",
+      "name": "HiAndromon",
+      "stage": "Mega",
+      "evolvesFrom": ["andromon"],
+      "evolvesTo": []
+    }
+
+  ]
+}

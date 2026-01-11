@@ -1,0 +1,179 @@
+{
+  "device": "DM20",
+  "version": "Ver1",
+  "digimon": [
+    {
+      "id": "botamon",
+      "name": "Botamon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "koromon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "koromon",
+      "name": "Koromon",
+      "stage": "Baby II",
+      "evolvesFrom": ["botamon"],
+      "evolvesTo": [
+        { "to": "agumon", "requirements": ["Training: 5+", "Care mistakes: 0–1"] },
+        { "to": "betamon", "requirements": ["Training: 3+", "Care mistakes: 2+"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "agumon",
+      "name": "Agumon",
+      "stage": "Rookie",
+      "evolvesFrom": ["koromon"],
+      "evolvesTo": [
+        { "to": "greymon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "tyranomon", "requirements": ["Care mistakes: 3+", "Training: 5–15", "Overfeed: 3+"] },
+        { "to": "devimon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "meramon", "requirements": ["Care mistakes: 3+", "Training: 16+", "Overfeed: 3+"] },
+        { "to": "numemon", "requirements": ["Care mistakes: 3+", "Training: 0–4"] },
+        { "to": "numemon", "requirements": ["Care mistakes: 3+", "Training: 5+", "Overfeed: 0–2"] }
+      ]
+    },
+    {
+      "id": "betamon",
+      "name": "Betamon",
+      "stage": "Rookie",
+      "evolvesFrom": ["koromon"],
+      "evolvesTo": [
+        { "to": "devimon", "requirements": ["Care mistakes: 0–2", "Training: 16+"] },
+        { "to": "meramon", "requirements": ["Care mistakes: 0–2", "Training: 0–15"] },
+        { "to": "airdramon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 0–2"] },
+        { "to": "seadramon", "requirements": ["Care mistakes: 3+", "Training: 8–15", "Overfeed: 3+"] },
+        { "to": "numemon", "requirements": ["Care mistakes: 3+", "Training: 0–7"] },
+        { "to": "numemon", "requirements": ["Care mistakes: 3+", "Training: 16+"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "greymon",
+      "name": "Greymon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumon"],
+      "evolvesTo": [
+        { "to": "metalgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "tyranomon",
+      "name": "Tyranomon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumon"],
+      "evolvesTo": [
+        { "to": "mamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "devimon",
+      "name": "Devimon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumon", "betamon"],
+      "evolvesTo": [
+        { "to": "metalgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "meramon",
+      "name": "Meramon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumon", "betamon"],
+      "evolvesTo": [
+        { "to": "mamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "numemon",
+      "name": "Numemon",
+      "stage": "Champion",
+      "evolvesFrom": ["agumon", "betamon"],
+      "evolvesTo": [
+        { "to": "monzaemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "airdramon",
+      "name": "Airdramon",
+      "stage": "Champion",
+      "evolvesFrom": ["betamon"],
+      "evolvesTo": [
+        { "to": "metalgreymon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    {
+      "id": "seadramon",
+      "name": "Seadramon",
+      "stage": "Champion",
+      "evolvesFrom": ["betamon"],
+      "evolvesTo": [
+        { "to": "mamemon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "metalgreymon",
+      "name": "MetalGreymon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["greymon", "devimon", "airdramon"],
+      "evolvesTo": [
+        { "to": "blitzgreymon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+    {
+      "id": "monzaemon",
+      "name": "Monzaemon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["numemon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "mamemon",
+      "name": "Mamemon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["tyranomon", "meramon", "seadramon"],
+      "evolvesTo": [
+        { "to": "banchomamemon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "banchomamemon",
+      "name": "BanchoMamemon",
+      "stage": "Mega",
+      "evolvesFrom": ["mamemon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "blitzgreymon",
+      "name": "BlitzGreymon",
+      "stage": "Mega",
+      "evolvesFrom": ["metalgreymon"],
+      "evolvesTo": [
+        {
+          "to": "omegamon_alter_s",
+          "requirements": ["Tag Battle: 5 times with CresGarurumon"]
+        }
+      ]
+    },
+    {
+      "id": "omegamon_alter_s",
+      "name": "Omegamon Alter-S",
+      "stage": "Ultra",
+      "evolvesFrom": ["blitzgreymon"],
+      "evolvesTo": []
+    }
+  ]
+}

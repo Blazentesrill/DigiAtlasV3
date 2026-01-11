@@ -1,0 +1,69 @@
+{
+  "device": "DM20",
+  "version": "Zuba",
+  "digimon": [
+    {
+      "id": "sakumon",
+      "name": "Sakumon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "sakuttomon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "sakuttomon",
+      "name": "Sakuttomon",
+      "stage": "Baby II",
+      "evolvesFrom": ["sakumon"],
+      "evolvesTo": [
+        { "to": "zubamon", "requirements": ["Time: 6 Hours"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "zubamon",
+      "name": "Zubamon",
+      "stage": "Rookie",
+      "evolvesFrom": ["sakuttomon"],
+      "evolvesTo": [
+        { "to": "zubaeagermon", "requirements": ["Time: 24 Hours"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "zubaeagermon",
+      "name": "ZubaEagermon",
+      "stage": "Champion",
+      "evolvesFrom": ["zubamon"],
+      "evolvesTo": [
+        { "to": "duramon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "duramon",
+      "name": "Duramon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["zubaeagermon"],
+      "evolvesTo": [
+        { "to": "durandamon", "requirements": ["Care mistakes: 0–2"] }
+      ]
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "durandamon",
+      "name": "Durandamon",
+      "stage": "Mega",
+      "evolvesFrom": ["duramon"],
+      "evolvesTo": []
+    }
+  ]
+}

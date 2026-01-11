@@ -1,0 +1,95 @@
+{
+  "device": "DM20",
+  "version": "Breakdra",
+  "digimon": [
+    {
+      "id": "petitmon",
+      "name": "Petitmon",
+      "stage": "Baby I",
+      "evolvesFrom": [],
+      "evolvesTo": [
+        { "to": "babydmon", "requirements": ["Time: 10 minutes"] }
+      ]
+    },
+    {
+      "id": "babydmon",
+      "name": "Babydmon",
+      "stage": "Baby II",
+      "evolvesFrom": ["petitmon"],
+      "evolvesTo": [
+        { "to": "dracomon", "requirements": ["Time: 6 Hours"] }
+      ]
+    },
+
+    /* ---------- Rookies ---------- */
+
+    {
+      "id": "dracomon",
+      "name": "Dracomon",
+      "stage": "Rookie",
+      "evolvesFrom": ["babydmon"],
+      "evolvesTo": [
+        { "to": "coredramon(green)", "requirements": ["Time: 24 Hours"] }
+      ]
+    },
+
+    /* ---------- Champions ---------- */
+
+    {
+      "id": "coredramongreen",
+      "name": "Coredramon(Green)",
+      "stage": "Champion",
+      "evolvesFrom": ["dracomon"],
+      "evolvesTo": [
+        { "to": "groundramon", "requirements": ["Battles: 15", "Victories: 12–15"] }
+      ]
+    },
+    /* ---------- Ultimates ---------- */
+
+    {
+      "id": "groundramon",
+      "name": "Groundramon",
+      "stage": "Ultimate",
+      "evolvesFrom": ["coredramongreen"],
+      "evolvesTo": [
+        { "to": "breakdramon", "requirements": ["Care mistakes: 0–2"] },
+        { "to": "matt'smetalgarurumon", "requirements": ["Care mistakes: 3-4", "Battles: 100+"] }
+      ]
+    },
+
+    /* ---------- Megas ---------- */
+
+    {
+      "id": "breakdramon",
+      "name": "Breakdramon",
+      "stage": "Mega",
+      "evolvesFrom": ["groundramon"],
+      "evolvesTo": [
+        { "to": "examon", "requirements": ["Tag Battle 5 times with Slayerdramon"] }
+      ]
+    },
+    {
+      "id": "mattsmetalgarurumon",
+      "name": "Matt's MetalGarurumon",
+      "stage": "Mega",
+      "evolvesFrom": ["groudramon"],
+      "evolvesTo": [
+        { "to": "omegamon", "requirements": ["Tag Battle 5 times with Tai's WarGreymon"] }
+      ]
+    },
+    {
+      "id": "examon",
+      "name": "Examon",
+      "stage": "Ultra",
+      "evolvesFrom": ["breakdramon"],
+      "evolvesTo": []
+    },
+    {
+      "id": "omegamon",
+      "name": "Omegamon",
+      "stage": "Ultra",
+      "evolvesFrom": ["matt'smetalgarurumon"],
+      "evolvesTo": []
+    }
+  ]
+}
