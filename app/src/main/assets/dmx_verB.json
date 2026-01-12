@@ -135,8 +135,8 @@
     },
 
     {
-      "id": "cerberumonx",
-      "name": "Cerberumon X",
+      "id": "wargrowlmonx",
+      "name": "Wargrowlmonmon X",
       "stage": "Ultimate",
       "evolvesFrom": ["leomonx", "sangloupmon", "damemon"],
       "evolvesTo": [
@@ -154,8 +154,8 @@
       ]
     },
     {
-      "id": "metalgreymonx",
-      "name": "MetalGreymon X",
+      "id": "weregarurumonx",
+      "name": "WereGarurumon X",
       "stage": "Ultimate",
       "evolvesFrom": ["tyrannomonx", "leomonx", "tobucatmon"],
       "evolvesTo": [
@@ -177,8 +177,8 @@
       ]
     },
     {
-      "id": "lucemonchaosmode",
-      "name": "Lucemon: Chaos Mode",
+      "id": "chohakkaimon",
+      "name": "Cho-Hakkaimon",
       "stage": "Ultimate",
       "evolvesFrom": ["sangloupmon", "damemon"],
       "evolvesTo": [
@@ -200,8 +200,8 @@
       ]
     },
     {
-      "id": "skullbaluchimon",
-      "name": "SkullBaluchimon",
+      "id": "lillymonx",
+      "name": "Lillymon X",
       "stage": "Ultimate",
       "evolvesFrom": ["tobucatmon", "sangloupmon", "damemon"],
       "evolvesTo": [
