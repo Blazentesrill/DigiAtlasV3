@@ -87,7 +87,7 @@ public class DetailActivity extends AppCompatActivity {
             digimonImage.setVisibility(View.GONE);
         }
 
-        /* -------- Evolves From -------- */
+        // Evolves From
 
         evolvesFromContainer.removeAllViews();
 
@@ -120,7 +120,7 @@ public class DetailActivity extends AppCompatActivity {
             evolutionDivider.setVisibility(View.GONE);
         }
 
-        /* -------- Evolves To -------- */
+        // Evolves To
 
         evolvesContainer.removeAllViews();
 

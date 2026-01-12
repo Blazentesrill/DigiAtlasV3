@@ -22,9 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /* ---------------------------------------
-           Load selected digivice JSON
-        --------------------------------------- */
+        //load json
         String dexFile = getIntent().getStringExtra("dex_file");
         if (dexFile == null || dexFile.trim().isEmpty()) {
             dexFile = "dm_ver1.json"; // fallback
@@ -33,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         try {
             DEX = new DexRepository(this).loadDexFromAssets(dexFile);
         } catch (RuntimeException ex) {
-            // ✅ Instead of crashing (and "bouncing back"), show a message
             Toast.makeText(this,
                     "Failed to load JSON: " + dexFile + "\nCheck /assets file name + JSON format.",
                     Toast.LENGTH_LONG).show();
@@ -49,9 +46,6 @@ public class MainActivity extends AppCompatActivity {
             currentDeviceId = DEX.device.toLowerCase();
         }
 
-        /* ---------------------------------------
-           Title text
-        --------------------------------------- */
         TextView titleText = findViewById(R.id.titleText);
         String deviceName = getIntent().getStringExtra("device_name");
 
@@ -63,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        /* ---------------------------------------
-           EGG SELECT BUTTON
-        --------------------------------------- */
         if (findViewById(R.id.openEggSelect) != null) {
             findViewById(R.id.openEggSelect).setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, EggSelectActivity.class);
@@ -74,9 +65,6 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        /* ---------------------------------------
-           RecyclerView
-        --------------------------------------- */
         RecyclerView recyclerView = findViewById(R.id.recycler);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

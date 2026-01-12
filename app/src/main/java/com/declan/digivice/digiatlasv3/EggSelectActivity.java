@@ -16,27 +16,20 @@ public class EggSelectActivity extends AppCompatActivity {
         String deviceId = getIntent().getStringExtra("device_id");
         if (deviceId == null) deviceId = "dm20";
 
-        /* ------------------------------------
-           Load correct layout per device
-        ------------------------------------ */
+
         if (deviceId.equals("dmx")) {
             setContentView(R.layout.activity_egg_select_dmx);
         } else {
             setContentView(R.layout.activity_egg_select_dm20);
         }
 
-        /* ------------------------------------
-           Back button (shared ID in both layouts)
-        ------------------------------------ */
         MaterialButton backBtn = findViewById(R.id.btn_back_to_devices);
         backBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, DeviceSelectActivity.class));
             finish();
         });
 
-        /* ------------------------------------
-           DM20 Egg Select
-        ------------------------------------ */
+       //DM20 egg
         if (deviceId.equals("dm20")) {
 
             MaterialButton dmVer1Btn = findViewById(R.id.btn_dm_ver1);
@@ -85,13 +78,10 @@ public class EggSelectActivity extends AppCompatActivity {
                     openDex("dm_breakdra.json", "Breakdra")
             );
         }
-
-        /* ------------------------------------
-           DMX Egg Select
-        ------------------------------------ */
+        //DMX egg
         if (deviceId.equals("dmx")) {
 
-            // These IDs must exist ONLY in activity_egg_select_dmx.xml
+
             MaterialButton dmxAlphaBtn = findViewById(R.id.btn_dmx_alpha);
             MaterialButton dmxBetaBtn  = findViewById(R.id.btn_dmx_beta);
 
@@ -105,10 +95,6 @@ public class EggSelectActivity extends AppCompatActivity {
 
         }
     }
-
-    /* ------------------------------------
-       Shared dex launcher
-    ------------------------------------ */
     private void openDex(String jsonFile, String deviceName) {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("dex_file", jsonFile);

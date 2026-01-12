@@ -8,9 +8,9 @@ public class DigimonEntry {
     public String name;
     public String stage;
 
-    // NEW: parents (used for "Evolves from")
+    //parents (used for "Evolves from")
     public List<String> evolvesFrom;
 
-    // Existing: children
+    // children
     public List<EvolutionEdge> evolvesTo;
 }
