@@ -197,21 +197,63 @@
       "name": "SkullBaluchimon",
       "stage": "Ultimate",
       "evolvesFrom": ["tobucatmon", "sangloupmon", "damemon"],
-      "evolvesTo": []
+      "evolvesTo": [
+
+        { "to": "sakuyamonx", "requirements": ["Area Cleared: 21", "Care Mistakes: 0-1", "Level: 7-8"] },
+
+        { "to": "valdurmon", "requirements": ["Care Mistakes: 0-1","Level: 1-6"] },
+        { "to": "valdurmon", "requirements": ["Area Cleared: 20", "Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 0-4"] },
+        { "to": "valdurmon", "requirements": ["Area NOT Cleared: 21", "Care Mistakes: 0-1", "Level: 7-8"] },
+
+        { "to": "sleipmonx", "requirements": ["Area Cleared: 20", "Care Mistakes: 2-3", "Level: 8","Defeat Mega Digimon (Quest Mode): 5+"] },
+
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 1-7"] },
+        { "to": "platinumnumemon", "requirements": ["Area NOT cleared: 20","Care Mistakes: 2-3", "Level: 8"] }
+      ]
     },
     {
       "id": "metaltyrannomonx",
       "name": "MetalTyrannomon X",
       "stage": "Ultimate",
       "evolvesFrom": ["leomonx", "tyrannomonx"],
-      "evolvesTo": []
+      "evolvesTo": [
+
+        {"to": "beelzemonx","requirements": ["Area Cleared: 23", "Care Mistakes: 0-1", "Level: 7-8"]},
+
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17", "Care Mistakes: 0-1", "Level: 5-6"] },
+        { "to": "wargreymonx", "requirements": ["Area Cleared: 17","Area NOT Cleared: 23", "Care Mistakes: 0-1", "Level: 7-8"] },
+
+        { "to": "sleipmonx", "requirements": ["Area Cleared: 20", "Care Mistakes: 2-3", "Level: 8","Defeat Mega Digimon (Quest Mode): 3+"] },
+
+        { "to": "malomyotismon", "requirements": ["Care Mistakes: 0-1", "Level: 1-4"] },
+        { "to": "malomyotismon", "requirements": ["Area Cleared: 20", "Care Mistakes: 2-3", "Level: 8","Defeat Mega Digimon (Quest Mode): 5+"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 17", "Care Mistakes: 0-1", "Level: 5-6"] },
+        { "to": "malomyotismon", "requirements": ["Area NOT Cleared: 17", "Care Mistakes: 0-1", "Level: 7-8"] },
+
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 1-7"] },
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 0-4"] }
+      ]
     },
     {
       "id": "crowmon",
       "name": "Crowmon",
       "stage": "Ultimate",
       "evolvesFrom": ["leomonx", "tyrannomonx", "tobucatmon"],
-      "evolvesTo": []
+      "evolvesTo": [
+        { "to": "sakuyamonx", "requirements": ["Area Cleared: 21", "Care Mistakes: 0-1", "Level: 8"] },
+        { "to": "sakuyamonx", "requirements": ["Area Cleared: 21", "Care Mistakes: 2-3", "Level: 8", "Defeat Mega Digimon (Quest Mode): 0-4"] },
+
+        { "to": "valdurmon", "requirements": ["Care Mistakes: 0-1","Level: 6-7"] },
+        { "to": "valdurmon", "requirements": ["Area NOT Cleared: 21", "Care Mistakes: 0-1", "Level: 8"] },
+
+        { "to": "malomyotismon", "requirements": ["Care Mistakes: 0-1", "Level: 1-5"] },
+        { "to": "malomyotismon", "requirements": ["Area Cleared: 21", "Care Mistakes: 2-3", "Level: 8","Defeat Mega Digimon (Quest Mode): 0-4"] },
+
+
+        { "to": "platinumnumemon", "requirements": ["Care Mistakes: 2-3", "Level: 1-7"] },
+        { "to": "platinumnumemon", "requirements": ["Area NOT cleared: 21","Care Mistakes: 2-3", "Level: 8"] }
+
+      ]
     },
 
     {
